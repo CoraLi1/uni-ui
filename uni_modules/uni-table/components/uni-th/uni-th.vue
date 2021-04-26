@@ -83,7 +83,7 @@ export default {
 	created() {
 		this.root = this.getTable('uniTable')
 		this.rootTr = this.getTable('uniTr')
-		this.rootTr.minWidthUpdate(this.width ? this.width : 140)
+		this.rootTr.minWidthUpdate && this.rootTr.minWidthUpdate(this.width ? this.width : 140)
 		this.border = this.root.border
 		this.root.thChildren.push(this)
 	},
